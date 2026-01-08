@@ -1,0 +1,67 @@
+import { ToastButton } from "@site/src/components/ToastButton";
+import { ConfirmButton } from "@site/src/components/ConfirmButton";
+
+## 🧩 JSX Content Examples
+
+```jsx
+showToast({
+  message: (
+    <div>
+      <strong>Payment received</strong>
+      <p>Your invoice was paid successfully.</p>
+    </div>
+  ),
+});
+```
+
+<ToastButton
+  type="success"
+  message={
+    <div>
+      <strong>Payment received</strong>
+      <p>Your invoice was paid successfully.</p>
+    </div>
+  }
+/>
+
+---
+## 🔔 Confirm toast
+
+```jsx
+const { showToast, removeToast } = useToast();
+
+    const handleConfirm = () => {
+        let toastIdRef = null;
+
+        const model = (
+            <div className="confirm_box">
+                <h1>Delete</h1>
+                <p>Are you sure, do you want delete?</p>
+                <div className="confirm_actions">
+                    <button onClick={() => toastIdRef && removeToast(toastIdRef)}>
+                        Cancel
+                    </button>
+                    <button
+                        onClick={() => {
+                            // Delete logic
+                            toastIdRef && removeToast(toastIdRef);
+                        }}
+                    >
+                        Delete
+                    </button>
+                </div>
+            </div>
+        );
+
+        const id = showToast({
+            message: model,
+            position: "center",
+            autoClose: false,
+            title: false,
+        });
+
+        toastIdRef = id;
+    };
+```
+
+<ConfirmButton />

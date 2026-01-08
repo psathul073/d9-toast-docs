@@ -1,0 +1,46 @@
+import { Uploading, Updating } from "@site/src/components/LoadingButton";
+
+
+
+## Uploading → Success Flow 
+
+``` jsx
+const id = showToast({
+  message: "Uploading file...",
+  type: "loading",
+  duration: 0,
+});
+
+setTimeout(() => {
+  removeToast(id);
+  showToast({
+    message: "Upload complete",
+    type: "success",
+  });
+}, 2000);
+```
+Click the button below to trigger a toast:
+
+<Uploading />
+
+---
+
+## Updating → Success Flow 
+``` jsx
+const id = showToast({
+  message: "Updating file...",
+  type: "submit",
+  duration: 0,
+});
+
+setTimeout(() => {
+  removeToast(id);
+  showToast({
+    message: "Update complete",
+    type: "success",
+  });
+}, 2000);
+```
+Click the button below to trigger a toast:
+
+<Updating />

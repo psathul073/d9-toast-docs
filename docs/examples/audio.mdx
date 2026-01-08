@@ -1,0 +1,185 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import { ToastButton } from "@site/src/components/ToastButton";
+
+## Audio controls
+
+<Tabs>
+  <TabItem value="audioOn" label="Sound On" default>
+    ```jsx
+    showToast({
+message: "New message",
+type: "info",
+audio: {
+enabled: true,
+},
+});
+
+````
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="New message"
+/>
+
+  </TabItem>
+  <TabItem value="audioOff" label="Sound Off">
+        ```jsx
+    showToast({
+  message: "New message",
+  type: "info",
+  audio: {
+    enabled: false,
+  },
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="New message"
+  audio={{ enabled: false}}
+/>
+  </TabItem>
+  <TabItem value="soundAdjust" label="Volume adjust">
+        ```jsx
+    showToast({
+message: "New message",
+type: "info",
+audio: {
+volume: 0.9, // max 1
+},
+});
+
+````
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="New message"
+  audio={{ volume: 0.9,}}
+/>
+  </TabItem>
+
+    <TabItem value="cooldown" label="Cooldown">
+        ```jsx
+    showToast({
+  message: "New message",
+  type: "info",
+  audio: {
+    cooldown: 800, // ms
+  },
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton type="success" message="New message" audio={{ cooldown: 800 }} />
+
+  </TabItem>
+
+</Tabs>
+
+---
+
+## Default sounds
+
+<Tabs>
+  <TabItem value="success" label="On Success" default>
+    ```jsx
+    const { showToast, sounds } = useToast();
+
+    showToast({
+message: "New message",
+type: "success",
+audio: {
+audioFile: sounds.success
+},
+});
+
+````
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="New message"
+/>
+
+  </TabItem>
+  <TabItem value="error" label="On Error">
+        ```jsx
+    const { showToast, sounds } = useToast();
+
+    showToast({
+  message: "New message",
+  type: "error",
+  audio: {
+   audioFile: sounds.error,
+  },
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="error"
+  message="New message"
+/>
+  </TabItem>
+  <TabItem value="info" label="On Info">
+        ```jsx
+    const { showToast, sounds } = useToast();
+
+    showToast({
+message: "New message",
+type: "info",
+audio: {
+audioFile: sounds.info
+},
+});
+
+````
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="info"
+  message="New message"
+/>
+  </TabItem>
+
+    <TabItem value="warning" label="On Warning">
+        ```jsx
+    const { showToast, sounds } = useToast();
+
+    showToast({
+  message: "New message",
+  type: "warning",
+  audio: {
+    audioFile: sounds.warning
+  },
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton type="warning" message="New message" />
+
+  </TabItem>
+
+</Tabs>
+
+---
+
+## Custom sound
+
+        ```jsx
+    showToast({
+  message: "New message",
+  type: "success",
+  audio: {
+    audioFile: "YOUR_AUDIO_URL"
+  },
+});
+````

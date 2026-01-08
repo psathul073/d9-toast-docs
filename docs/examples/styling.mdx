@@ -1,0 +1,48 @@
+import { ToastButton } from "@site/src/components/ToastButton";
+
+## 1.CSS Class
+
+Gradient Toast
+
+```CSS
+// toast.css
+
+.gradient-bg {
+ background: linear-gradient(to left, #3b5f41, #66a96b, #98e19a);
+ color: #ffffff;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 600;
+ border: 2px solid rgb(3, 55, 21);
+} 
+```
+
+```jsx
+import { ToastProvider } from "d9-toast";
+import "d9-toast/toast.css";
+import "toast.css"; // import your custom css file here.
+
+showToast({
+  message: "Styled Toast",
+  className: "gradient-bg",
+});
+```
+
+<ToastButton
+  type="success"
+  message="Styled Toast"
+  position="center-top"
+  className="gradient-bg"
+/>
+---
+## 2. Tailwind CSS
+
+``` jsx
+showToast({
+  message: "Styled Toast",
+  className:
+    "!bg-gradient-to-l from-[#3b5f41] via-[#66a96b] to-[#98e19a] !text-white !font-medium !border-2 !border-[rgb(3, 55, 21)]",
+});
+```
+:::info
+Use `!important` when overriding styles with Tailwind.
+::::

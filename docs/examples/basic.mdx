@@ -1,0 +1,69 @@
+import { ToastButton } from "@site/src/components/ToastButton";
+
+
+This page shows common real-world use cases for D9 Toast.
+
+## 🔔 Simple Toast
+
+```jsx
+showToast({
+  message: "Simple toast ...",
+  type: "success",
+  title: false,
+});
+```
+
+Click the button below to trigger a toast:
+
+<ToastButton type="success" message="Simple toast ...." position="top-right" title={false} />
+---
+## ✅ Success Toast
+
+```jsx
+showToast({
+  message: "Profile updated successfully",
+  type: "success",
+});
+```
+
+Click the button below to trigger a toast:
+
+<ToastButton type="success" message="Profile updated successfully" position="top-right" />
+---
+## ❌ Error Toast
+
+```jsx
+showToast({
+  message: "Something went wrong",
+  type: "error",
+});
+```
+
+Click the button below to trigger a toast:
+
+<ToastButton type="error" message="Something went wrong" position="top-right" />
+---
+## ℹ️ Info Toast
+
+```jsx
+showToast({
+  message: "New update available",
+  type: "info",
+});
+```
+
+Click the button below to trigger a toast:
+
+<ToastButton type="info" message="New update available" position="top-right" />
+---
+## ⚠️ Warning Toast
+
+```jsx
+showToast({
+  message: "Invalid user data",
+  type: "warning",
+});
+```
+Click the button below to trigger a toast:
+
+<ToastButton type="warning" message="Invalid user data" position="top-right" />

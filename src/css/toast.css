@@ -1,0 +1,44 @@
+.gradient-bg {
+ background: linear-gradient(to left, #3b5f41, #66a96b, #98e19a);
+ color: #ffffff;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 600;
+ border: 2px solid rgb(3, 55, 21);
+} 
+
+.toast-buttons__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.confirm_box {
+  padding: 2px 4px;
+}
+.confirm_box h1 {
+  font-size: 0.95rem;
+  margin: 0%;
+  margin-bottom: 12px;
+}
+.confirm_box p {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+.confirm_actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.confirm_actions button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.confirm_actions button:last-child {
+  background-color: rgb(226, 43, 43);
+  color: rgb(255, 255, 255);
+}
