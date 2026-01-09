@@ -11,7 +11,7 @@ export function UndoButton(): JSX.Element {
         <button
             style={{
                 padding: "10px 16px",
-                background: "#6366f1",
+                background: "rgb(92 96 255",
                 color: "white",
                 borderRadius: "8px",
                 border: "none",
