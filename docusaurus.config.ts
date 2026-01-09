@@ -23,6 +23,7 @@ const config: Config = {
   organizationName: 'psathul073', // Usually your GitHub org/user name.
   projectName: "d9-toast-docs", // Usually your repo name.
 
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 

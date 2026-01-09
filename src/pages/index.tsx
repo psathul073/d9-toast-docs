@@ -17,7 +17,7 @@ export default function Home() {
 
         <div className={styles.title}>
           <h1>D9 TOAST </h1>
-          <img src="/img/logo.png" alt=" D9 Toast Logo" height={60} width={60} />
+          <img src="img/logo.png" alt=" D9 Toast Logo" height={60} width={60} />
         </div>
 
         <p>A lightweight, fully typed toast notification library for React.js / next.js</p>
