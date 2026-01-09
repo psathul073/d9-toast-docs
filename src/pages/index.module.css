@@ -30,7 +30,7 @@
   border-radius: 999px;
   color: white;
   background: linear-gradient(135deg, #6366f1, #4f46e5);
-  border: 1.5px solid #4f46e5;
+  border: 2px solid #4f46e5;
 }
 
 .cta:hover {
@@ -41,13 +41,13 @@
   font-size: 1.05rem;
   padding: 0.6rem 1.4rem;
   border-radius: 999px;
-  border: 1.5px solid currentColor;
-  color: var(--primary-font-color);
+  border: 2px solid var(--primary-border-color);
+  color: var(--primary-font-color) !important;
   background: transparent;
 }
 
 .ctaOutline:hover {
-  background: rgba(255, 255, 255, 0.15);
+  border-color: #4f46e5;
 }
 
 .install {
