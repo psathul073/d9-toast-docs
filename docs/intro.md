@@ -25,8 +25,7 @@ library for React and Next.js applications.
 
 ## Demo
 
-👉 Live Demo:  
-https://codesandbox.io/embed/cqkyzm?view=preview
+👉 Live Demo :  [https://psathul073.github.io/d9-toast-docs/docs/examples/basic](https://psathul073.github.io/d9-toast-docs/docs/examples/basic)
 
 
 ## Support my work  
