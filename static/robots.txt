@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://psathul073.github.io/d9-toast-docs/sitemap.xml
