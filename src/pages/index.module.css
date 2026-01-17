@@ -78,6 +78,7 @@
 }
 
 .toast_button {
+  width: 120px;
   font-size: 1.05rem;
   font-weight: 500;
   padding: 0.7rem 1rem;

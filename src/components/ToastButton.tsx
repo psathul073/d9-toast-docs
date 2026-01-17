@@ -24,7 +24,7 @@ export function ToastButton({
         <button
             style={{
                 height: "40px",
-                width: "100px",
+                width: "120px",
                 fontSize: "1rem",
                 background: "#7a4bf6",
                 color: "white",
