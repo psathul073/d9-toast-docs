@@ -1,3 +1,4 @@
+
 .gradient-bg {
  background: linear-gradient(to left, #3b5f41, #66a96b, #98e19a);
  color: #ffffff;
@@ -12,6 +13,7 @@
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  
 }
 
 .confirm_box {
@@ -42,3 +44,4 @@
   background-color: rgb(226, 43, 43);
   color: rgb(255, 255, 255);
 }
+

@@ -1,4 +1,4 @@
-import { useToast, ToastType, ToastPosition, ToastAudioOptions, ToastTheme } from "d9-toast";
+import { toast, ToastType, ToastPosition, ToastAudioOptions, ToastTheme } from "d9-toast";
 
 type Props = {
     type: ToastType;
@@ -19,21 +19,22 @@ export function ToastButton({
     audio = null, className, theme, closable, autoClose, progress
  }: Props) {
 
-    const { showToast, sounds } = useToast();
 
     return (
         <button
             style={{
-                padding: "10px 16px",
-                background: "rgb(92 96 255",
+                height: "40px",
+                width: "100px",
+                fontSize: "1rem",
+                background: "#7a4bf6",
                 color: "white",
                 borderRadius: "8px",
                 border: "none",
                 cursor: "pointer",
             }}
-            onClick={() => showToast({
-                type, message, position, title, className, audio: audio ? audio : {
-                    audioFile: sounds[type],
+            onClick={() => toast[type](message, {
+                position, title, className, audio: audio ? audio : {
+                    audioFile: toast.sounds[type],
                 },
                 theme, closable, autoClose, progress
             })}

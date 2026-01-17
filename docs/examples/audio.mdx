@@ -1,6 +1,5 @@
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
-import { ToastButton } from "@site/src/components/ToastButton";
 
 ## Audio controls
 
@@ -16,12 +15,6 @@ enabled: true,
 });
 
 ````
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="New message"
-/>
 
   </TabItem>
   <TabItem value="audioOff" label="Sound Off">
@@ -35,13 +28,6 @@ Click the button below to trigger a toast:
 });
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="New message"
-  audio={{ enabled: false}}
-/>
   </TabItem>
   <TabItem value="soundAdjust" label="Volume adjust">
         ```jsx
@@ -54,13 +40,7 @@ volume: 0.9, // max 1
 });
 
 ````
-Click the button below to trigger a toast:
 
-<ToastButton
-  type="success"
-  message="New message"
-  audio={{ volume: 0.9,}}
-/>
   </TabItem>
 
     <TabItem value="cooldown" label="Cooldown">
@@ -73,10 +53,6 @@ Click the button below to trigger a toast:
   },
 });
 ````
-
-Click the button below to trigger a toast:
-
-<ToastButton type="success" message="New message" audio={{ cooldown: 800 }} />
 
   </TabItem>
 
@@ -100,12 +76,6 @@ audioFile: sounds.success
 });
 
 ````
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="New message"
-/>
 
   </TabItem>
   <TabItem value="error" label="On Error">
@@ -121,12 +91,6 @@ Click the button below to trigger a toast:
 });
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="error"
-  message="New message"
-/>
   </TabItem>
   <TabItem value="info" label="On Info">
         ```jsx
@@ -141,12 +105,7 @@ audioFile: sounds.info
 });
 
 ````
-Click the button below to trigger a toast:
 
-<ToastButton
-  type="info"
-  message="New message"
-/>
   </TabItem>
 
     <TabItem value="warning" label="On Warning">
@@ -161,10 +120,6 @@ Click the button below to trigger a toast:
   },
 });
 ````
-
-Click the button below to trigger a toast:
-
-<ToastButton type="warning" message="New message" />
 
   </TabItem>
 

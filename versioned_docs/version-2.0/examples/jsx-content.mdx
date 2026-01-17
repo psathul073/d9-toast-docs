@@ -1,11 +1,32 @@
-import { toast } from "d9-toast";
-import { JSX } from "react";
+import { ToastButton } from "@site/src/components/ToastButton";
+import { ConfirmButton } from "@site/src/components/ConfirmButton";
 
+## 🧩 JSX Content Examples
 
-export function ConfirmButton(): JSX.Element {
+```jsx
+toast.success(
+    <div>
+      <strong>Payment received</strong>
+      <p>Your invoice was paid successfully.</p>
+    </div>
+  );
+```
 
+<ToastButton
+  type="success"
+  message={
+    <div>
+      <strong>Payment received</strong>
+      <p>Your invoice was paid successfully.</p>
+    </div>
+  }
+/>
 
-    const handleConfirm = () => {
+---
+## 🔔 Confirm toast
+
+```jsx
+  const handleConfirm = () => {
         let toastIdRef = null;
 
         const model = (
@@ -37,21 +58,6 @@ export function ConfirmButton(): JSX.Element {
 
         toastIdRef = id;
     };
+```
 
-    return (
-        <button
-            style={{
-                height: "40px",
-                width: "150px",
-                fontSize: "1rem",
-                background: "#7a4bf6",
-                color: "white",
-                borderRadius: "8px",
-                border: "none",
-                cursor: "pointer",
-            }}
-            onClick={handleConfirm} >
-            Confirm button
-        </button>
-    );
-}
+<ConfirmButton />

@@ -1,29 +1,27 @@
-import { useToast } from "d9-toast";
+import { toast } from "d9-toast";
 import { JSX } from "react";
 
+const buttonStyle = {
+    height: "40px",
+    width: "100px",
+    fontSize: "1rem",
+    background: "#7a4bf6",
+    color: "white",
+    borderRadius: "8px",
+    border: "none",
+    cursor: "pointer",
+}
 
 export function UndoButton(): JSX.Element {
 
-    const { showToast, removeToast } = useToast();
-
-
     return (
         <button
-            style={{
-                padding: "10px 16px",
-                background: "rgb(92 96 255",
-                color: "white",
-                borderRadius: "8px",
-                border: "none",
-                cursor: "pointer",
-            }}
-            onClick={() => showToast({
-                message: "Item deleted",
-                type: "warning",
+            style={buttonStyle}
+            onClick={() => toast.warning( "Item deleted",{
                 actions: [
                     {
                         text: "Undo",
-                        callback: ({ id }) => removeToast(id),
+                        callback: ({ id }) => toast.dismiss(id),
                     },
                 ],
             })} >
@@ -34,21 +32,11 @@ export function UndoButton(): JSX.Element {
 
 
 export function MultiButton(): JSX.Element {
-    const { showToast, removeToast } = useToast();
 
     return (
         <button
-            style={{
-                padding: "10px 16px",
-                background: "#6366f1",
-                color: "white",
-                borderRadius: "8px",
-                border: "none",
-                cursor: "pointer",
-            }}
-            onClick={() => showToast({
-                message: "Unsaved changes",
-                type: "info",
+            style={buttonStyle}
+            onClick={() => toast.info( "Unsaved changes",{
                 actions: [
                     { text: "Save" },
                     { text: "Discard", className: "text-red-500" },

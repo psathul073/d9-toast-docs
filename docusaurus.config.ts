@@ -29,6 +29,19 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           editUrl:
             "https://github.com/psathul073/d9-toast-docs/tree/main/",
+
+          lastVersion: "2.0",
+          versions: {
+            current: {
+              label: "1.x",
+              path: "1.x",
+              banner: "unmaintained",
+            },
+            "2.0": {
+              label: "2.0 (Latest)",
+              banner: "none",
+            },
+          },
         },
 
         sitemap: {
@@ -43,8 +56,9 @@ const config: Config = {
     ],
   ],
 
+
   themeConfig: {
-    image: "img/logo.png",
+    image: "img/logo.webp",
 
     colorMode: {
       respectPrefersColorScheme: true,
@@ -60,6 +74,10 @@ const config: Config = {
           position: "left",
         },
         {
+          type: "docsVersionDropdown",
+          position: "left",
+        },
+        {
           href: "https://www.npmjs.com/package/d9-toast",
           label: "npm",
           position: "right",
@@ -69,6 +87,7 @@ const config: Config = {
           label: "GitHub",
           position: "right",
         },
+
       ],
     },
 

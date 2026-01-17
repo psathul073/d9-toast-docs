@@ -1,0 +1,38 @@
+{
+  "tutorialSidebar": [
+    "intro",
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        "installation",
+        "getting-started"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "API Reference",
+      "items": [
+        "api/toast",
+        "api/toast-options",
+        "api/audio"
+      ]
+    },
+    "styling",
+    "typescript",
+    {
+      "type": "category",
+      "label": "Examples",
+      "items": [
+        "examples/basic",
+        "examples/async",
+        "examples/actions",
+        "examples/positions",
+        "examples/styling",
+        "examples/audio",
+        "examples/jsx-content",
+        "examples/controlled"
+      ]
+    }
+  ]
+}

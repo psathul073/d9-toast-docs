@@ -1,0 +1,158 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import { ToastButton } from "@site/src/components/ToastButton";
+
+## Theme
+
+<Tabs>
+  <TabItem value="light" label="Light mode" default>
+
+```jsx
+toast.success("Light theme applied.", { 
+  theme: "light",
+});
+````
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="Light theme applied."
+/>
+
+  </TabItem>
+
+<TabItem value="dark" label="Dark mode">
+
+```jsx
+toast.success("Dark theme applied.", {
+  theme: "dark",
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="Dark theme applied."
+  theme="dark"
+/>
+  </TabItem>
+  <TabItem value="colored" label="Colored mode">
+
+```jsx
+toast.success("Colored theme applied.", {
+  theme: "colored",
+});
+
+````
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="Colored theme applied."
+  theme= "colored"
+/>
+  </TabItem>
+
+</Tabs>
+
+---
+
+## Title
+
+<Tabs>
+
+<TabItem value="titleEnable" label="Title Show" default>
+
+```jsx
+toast.success("Show toast With title", {
+  title: true,
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton type="success" message="Show toast With title" title={true} />
+
+</TabItem>
+  
+<TabItem value="titleDisable" label="Title Hide">
+      
+```jsx
+toast.success("Show toast Without title", {
+ title: false,
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="Show toast Without title"
+  title={false}
+/>
+  </TabItem>
+
+</Tabs>
+
+---
+
+## CLose
+
+<Tabs>
+  <TabItem value="closeEnable" label="Closable" default>
+
+```jsx
+toast.success("Show toast With close button", {
+  closable: true,
+});
+
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton type="success" message="Show toast With close button" closable={true} />
+
+  </TabItem>
+
+  <TabItem value="autoClose" label="autoClose">
+```jsx
+toast.success("This toast won't auto close", {
+  closable: true,
+  autoClose: false,
+});
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton
+  type="success"
+  message="This toast won't auto close"
+  closable={true}
+  autoClose={false}
+/>
+  </TabItem>
+
+</Tabs>
+
+---
+
+## Progress
+
+<Tabs>
+  <TabItem value="progress" label="progress" default>
+```jsx
+toast.success("Show toast without progress bar.", {
+  progress: false,
+  closable: true,
+});
+
+````
+
+Click the button below to trigger a toast:
+
+<ToastButton type="success" message="Show toast without progress bar." progress={false} closable={true} />
+
+  </TabItem>
+
+</Tabs>

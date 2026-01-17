@@ -1,0 +1,47 @@
+import { Upload, Update } from "@site/src/components/PromiseButton";
+
+## Uploading → Success Flow
+
+```jsx
+    toast.promise(
+        () =>
+            new Promise((resolve) =>
+                setTimeout(() => resolve({ status: "complete" }), 3000)
+            ),
+        {
+            loading: "Uploading file...",
+            success: (res: { status: string }) => `Upload ${res.status}`,
+            error: "Uploading failed",
+        },
+        {
+            type: "submit"
+        }
+    );
+
+```
+
+Click the button below to trigger a toast:
+
+<Upload />
+
+---
+
+## Updating → Success Flow
+
+```jsx
+   toast.promise(
+        () =>
+            new Promise((resolve) =>
+                setTimeout(() => resolve({ status: "complete" }), 3000)
+            ),
+        {
+            loading: "Updating file...",
+            success: (res: { status: string }) => `Update ${res.status}`,
+            error: "Update error.",
+        },
+    );
+```
+
+Click the button below to trigger a toast:
+
+<Update/>

@@ -4,13 +4,13 @@ Install **D9 Toast** using your preferred package manager.
 
 ## npm
 ```bash
-npm install d9-toast@1.5.35
+npm install d9-toast
 ```
 ## pnpm
 ```bash
-pnpm add d9-toast@1.5.35
+pnpm add d9-toast
 ```
 ## yarn
 ```bash
-yarn add d9-toast@1.5.35
+yarn add d9-toast
 ```

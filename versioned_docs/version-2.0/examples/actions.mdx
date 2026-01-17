@@ -1,0 +1,32 @@
+import { UndoButton, MultiButton } from "@site/src/components/ActionButton";
+
+## Undo Action
+
+```jsx
+toast.warning("Item deleted", {
+  actions: [
+    {
+      text: "Undo",
+      callback: ({ id }) => toast.dismiss(id),
+    },
+  ],
+});
+```
+
+Click the button below to trigger a toast:
+
+<UndoButton />
+
+---
+
+## Multiple Actions
+
+```jsx
+toast.info("Unsaved changes", {
+  actions: [{ text: "Save" }, { text: "Discard", className: "text-red-500" }],
+});
+```
+
+Click the button below to trigger a toast:
+
+<MultiButton />

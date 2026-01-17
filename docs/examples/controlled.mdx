@@ -1,6 +1,5 @@
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
-import { ToastButton } from "@site/src/components/ToastButton";
 
 ## Theme
 
@@ -13,12 +12,6 @@ theme: "light",
 });
 
 ````
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="Light theme applied."
-/>
 
   </TabItem>
 
@@ -30,13 +23,6 @@ Click the button below to trigger a toast:
 });
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="Dark theme applied."
-  theme="dark"
-/>
   </TabItem>
   <TabItem value="colored" label="Colored mode">
         ```jsx
@@ -46,13 +32,7 @@ theme: "colored",
 });
 
 ````
-Click the button below to trigger a toast:
 
-<ToastButton
-  type="success"
-  message="Colored theme applied."
-  theme= "colored"
-/>
   </TabItem>
 
 </Tabs>
@@ -71,10 +51,6 @@ title: true,
 
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton type="success" message="Show toast With title" title={true} />
-
   </TabItem>
   
   <TabItem value="titleDisable" label="Title Hide">
@@ -85,13 +61,6 @@ title: false,
 });
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="Show toast Without title"
-  title={false}
-/>
   </TabItem>
 
 </Tabs>
@@ -110,10 +79,6 @@ closable: true,
 
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton type="success" message="Show toast With close button" closable={true} />
-
   </TabItem>
 
   <TabItem value="autoClose" label="autoClose">
@@ -125,14 +90,6 @@ autoClose: false,
 });
 ````
 
-Click the button below to trigger a toast:
-
-<ToastButton
-  type="success"
-  message="This toast won't auto close"
-  closable={true}
-  autoClose={false}
-/>
   </TabItem>
 
 </Tabs>
@@ -150,10 +107,6 @@ progress: false,
 });
 
 ````
-
-Click the button below to trigger a toast:
-
-<ToastButton type="success" message="Show toast without progress bar." progress={false} />
 
   </TabItem>
 

@@ -1,11 +1,10 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import { useToast } from "d9-toast";
+import { toast } from "d9-toast";
 import styles from "./index.module.css";
 
 export default function Home() {
-  const { showToast } = useToast();
 
   return (
     <Layout
@@ -15,10 +14,9 @@ export default function Home() {
       {/* HERO */}
       <header className={styles.hero}>
 
-        <div className={styles.title}>
-          <h1>D9 TOAST </h1>
-          <img src="img/logo.png" alt=" D9 Toast Logo" height={60} width={60} />
-        </div>
+          <img src="img/logo.webp" alt=" D9 Toast Logo" height={260} width={260} />
+          {/* <h1>D9 TOAST </h1> */}
+          
 
         <p>A lightweight, fully typed toast notification library for React.js / next.js</p>
 
@@ -27,7 +25,7 @@ export default function Home() {
             className={`button button--primary ${styles.cta}`}
             to="/docs/intro"
           >
-            Get Started
+            Document
           </Link>
 
           <Link
@@ -70,18 +68,12 @@ export default function Home() {
       <section className={styles.example}>
         <h2>Quick Example</h2>
         <pre>
-          <code>{`showToast({
-  message: "Saved successfully!",
-  type: "success",
-});`}</code>
+          <code>{`toast.success("D9 Toast is working!");`}</code>
         </pre>
         <button
           className={styles.toast_button}
           onClick={() =>
-            showToast({
-              message: "D9 Toast is working!",
-              type: "success",
-            })
+            toast.success("D9 Toast is working!")
           }
         >
           Test Toast
