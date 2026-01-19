@@ -11,6 +11,7 @@ import { toast } from "d9-toast";
 
 | Method                                      | Description         |
 | ------------------------------------------- | ------------------- |
+| `toast(msg, options)`                       | Show default toast  |
 | `toast.success(msg, options)`               | Show success toast  |
 | `toast.error(msg, options)`                 | Show error toast    |
 | `toast.info(msg, options)`                  | Show info toast     |
@@ -20,6 +21,11 @@ import { toast } from "d9-toast";
 | `toast.dismissAll()`                        | Clear all toasts    |
 
 ---
+
+> toast(message, options?)
+```ts
+toast("Simple notification");
+```
 
 > toast.success(message, options?)
 ```ts

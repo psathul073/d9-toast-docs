@@ -24,13 +24,11 @@ Required **once** at app root
 ```tsx
 import { toast } from "d9-toast";
 
-function MyComponent() {
-  return (
-    <button onClick={() => toast.success("Saved successfully!")}>
-      Show Toast
-    </button>
-  );
-}
+// You can call it directly!
+const notify = () => toast("Simple notification");
+
+// Or use specific types
+const success = () => toast.success("Saved!");
 ```
 ✅ Works inside
 

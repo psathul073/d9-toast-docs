@@ -13,11 +13,11 @@ type Props = {
     progress: boolean,
 };
 
-export function ToastButton({ 
+export function ToastButton({
     type, message,
     position = "top-right", title = true,
     audio = null, className, theme, closable, autoClose, progress
- }: Props) {
+}: Props) {
 
 
     return (
@@ -32,12 +32,14 @@ export function ToastButton({
                 border: "none",
                 cursor: "pointer",
             }}
-            onClick={() => toast[type](message, {
-                position, title, className, audio: audio ? audio : {
-                    audioFile: toast.sounds[type],
-                },
-                theme, closable, autoClose, progress
-            })}
+            onClick={() => {
+                type === "default" ? toast(message) : toast[type](message, {
+                    position, title, className, audio: audio ? audio : {
+                        audioFile: toast.sounds[type],
+                    },
+                    theme, closable, autoClose, progress
+                })
+            }}
         >
             Show Toast
         </button>
