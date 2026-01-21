@@ -50,7 +50,7 @@ const config: Config = {
         },
 
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: ["./src/css/custom.css", require.resolve("d9-toast/toast.css")]
         },
       } satisfies Preset.Options,
     ],

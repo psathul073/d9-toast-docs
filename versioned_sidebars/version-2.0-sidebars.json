@@ -4,22 +4,16 @@
     {
       "type": "category",
       "label": "Getting Started",
-      "items": [
-        "installation",
-        "getting-started"
-      ]
+      "items": ["installation", "getting-started"]
     },
     {
       "type": "category",
       "label": "API Reference",
-      "items": [
-        "api/toast",
-        "api/toast-options",
-        "api/audio"
-      ]
+      "items": ["api/toast", "api/toast-options", "api/audio"]
     },
     "styling",
     "typescript",
+    "changelog",
     {
       "type": "category",
       "label": "Examples",
