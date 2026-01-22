@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
----
+
+> ***v2.5.44 — Tost order issue Fix***
+
+### ⌛ Changed
+
+- Updated toast ordering so that newly created toasts appear at the top of the list.
+- Adjusted toast state logic to keep a maximum of 10 toasts while correctly removing the oldest ones.
 
 > ***v2.5.43 — Animation & Docusaurus Production Fix***
 
