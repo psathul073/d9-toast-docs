@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+> ***v2.5.45 — Tost motion issue Fix***
+
+### Added
+- Mobile swipe-to-dismiss support (position-aware)
+
+### Improved
+- Toast enter/exit animations
+- Stack expand/collapse motion
+- Reduced-motion accessibility
+
+### Optimized
+- Animation performance and GPU usage
+- Mobile rendering and blur effects
+
 
 > ***v2.5.44 — Tost order issue Fix***
 
