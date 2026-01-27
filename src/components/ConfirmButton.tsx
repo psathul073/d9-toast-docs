@@ -28,7 +28,7 @@ export function ConfirmButton(): JSX.Element {
             </div>
         );
 
-        const id = toast.success(model, {
+        const id = toast(model, {
             position: "center",
             autoClose: false,
             title: false,

@@ -3,29 +3,22 @@ import TabItem from "@theme/TabItem";
 import { ToastButton } from "@site/src/components/ToastButton";
 
 ## Top
+
 <Tabs>
-  <TabItem value="top-right" label="Top Right" default>
-    ```jsx
-    showToast({
-  message: "Top right toast",
-  position: "top-right",
-});
+  
+<TabItem value="top-right" label="Top Right" default>
+```jsx
+showToast("Top right toast", { position: "top-right" });
 ```
 Click the button below to trigger a toast:
 
-<ToastButton
-  type="success"
-  message="Top right toast"
-  position="top-right"
-/>
+<ToastButton type="success" message="Top right toast" position="top-right" />
 
-  </TabItem>
-  <TabItem value="top-left" label="Top Left">
-      ```jsx
-    showToast({
-  message: "Top left toast",
-  position: "top-left",
-});
+</TabItem>
+
+<TabItem value="top-left" label="Top Left">
+```jsx
+showToast("Top left toast", { position: "top-left" });
 ```
 Click the button below to trigger a toast:
 
@@ -34,7 +27,7 @@ Click the button below to trigger a toast:
   message="Top left toast"
   position="top-left"
 />
-  </TabItem>
+</TabItem>
 
 </Tabs>
 
@@ -43,12 +36,9 @@ Click the button below to trigger a toast:
 ## Bottom
 
 <Tabs>
-  <TabItem value="bottom-right" label="Bottom Right" default>
-    ```jsx
-    showToast({
-  message: "Bottom right toast",
-  position: "bottom-right",
-});
+<TabItem value="bottom-right" label="Bottom Right" default>
+```jsx
+showToast("Bottom right toast",{ position: "bottom-right" });
 ```
 Click the button below to trigger a toast:
 
@@ -58,13 +48,11 @@ Click the button below to trigger a toast:
   position="bottom-right"
 />
 
-  </TabItem>
-  <TabItem value="bottom-left" label="Bottom Left">
-      ```jsx
-    showToast({
-  message: "Bottom left toast",
-  position: "bottom-left",
-});
+</TabItem>
+
+<TabItem value="bottom-left" label="Bottom Left">
+```jsx
+showToast("Bottom left toast",{ position: "bottom-left" });
 ```
 Click the button below to trigger a toast:
 
@@ -78,32 +66,25 @@ Click the button below to trigger a toast:
 </Tabs>
 
 ---
+
 ## Center
 
 <Tabs>
-  <TabItem value="center" label="Center" default>
-    ```jsx
-    showToast({
-  message: "Centered notification",
-  position: "center",
-});
+  
+<TabItem value="center" label="Center" default>
+```jsx
+showToast("Centered notification",{ position: "center" });
 ```
 Click the button below to trigger a toast:
 
-<ToastButton
-  type="success"
-  message="Centered notification"
-  position="center"
-/>
+<ToastButton type="success" message="Centered notification" position="center" />
 
-  </TabItem>
+</TabItem>
 
-  <TabItem value="center-top" label="Center Top">
-      ```jsx
-    showToast({
-  message: "Center top toast",
-  position: "center-top",
-});
+<TabItem value="center-top" label="Center Top">
+
+```jsx
+showToast("Center top toast",{ position: "center-top" });
 ```
 Click the button below to trigger a toast:
 
@@ -114,12 +95,10 @@ Click the button below to trigger a toast:
 />
   </TabItem>
 
-  <TabItem value="center-bottom" label="Center Bottom">
-      ```jsx
-    showToast({
-  message: "Center bottom toast",
-  position: "center-bottom",
-});
+<TabItem value="center-bottom" label="Center Bottom">
+
+```jsx
+showToast("Center bottom toast",{ position: "center-bottom"  });
 ```
 Click the button below to trigger a toast:
 
